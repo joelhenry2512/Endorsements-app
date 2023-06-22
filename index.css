@@ -1,0 +1,136 @@
+/* Reset default styles */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Overall layout */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F7D45F;
+  color: #1B1924;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+}
+
+/* Hero section */
+.hero {
+  margin-top: 50px;
+  animation: fade-in 1s ease-out;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-content img {
+  width: 120px;
+  margin-bottom: 10px;
+  animation: scale-in 0.5s ease-out;
+}
+
+.hero-content h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 32px;
+  animation: slide-up 0.8s ease-out;
+}
+
+/* Input field and button */
+#input-field {
+  margin-top: 20px;
+  width: 250px;
+  height: 40px;
+  background-color: #FF897D;
+  border-radius: 20px;
+  border: none;
+  color: #1B1924;
+  padding: 0 10px;
+  animation: fade-in 1s ease-out;
+}
+
+#publish-button {
+  margin-top: 20px;
+  width: 120px;
+  height: 40px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #FFFFFF;
+  background-color: #32CD32;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  animation: slide-up 1s ease-out;
+}
+
+/* Endorsements section */
+.endorsements {
+  margin-top: 50px;
+}
+
+.endorsements-content {
+  background-color: #FF897D;
+  padding: 20px;
+  border-radius: 20px;
+  animation: fade-in 1s ease-out;
+}
+
+.endorsements-content h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  animation: slide-up 0.8s ease-out;
+}
+
+/* Endorsement list */
+#endorse-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  text-align: left;
+}
+
+#endorse-list li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #1B1924;
+  background-color: #F9D5C3;
+  animation: fade-in 1s ease-out;
+}
+
+/* Animations */
+@keyframes slide-up {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
